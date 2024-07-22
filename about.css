@@ -1,0 +1,21 @@
+html{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+body{
+    /* background-image: url(img/back.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; */
+    background-color: aqua;
+    font-size: 30px;
+}
+
+ul{
+    border-style: double;
+    padding: 30px;
+}

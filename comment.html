@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Comment </title> 
+    </head>
+    
+    <body>
+        <hr>
+        <nav aria-label="primary-navigation">
+            <ul>
+                <li><a href="#contact"> Contact Me</a></li>
+            </ul>
+        </nav>
+        
+        <hr>
+        <h1>Please leave your info and comments.</h1>
+        <hr>
+        <article id="contact">
+            <h2>Comments on this.</h2>
+            <p>I like to hear your comments on this page</p>
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                <p>
+                    <label for="fname">First Name: </label>
+                    <input type="text" name="fname" id="fname" placeholder="ze" autocomplete="on" required>
+                </p>
+                <p>
+                    <label for="lname">Last Name: </label>
+                    <input type="text" name="lname" id="lname" placeholder="const" autocomplete="on" required>
+                </p>
+                <p>
+                    <label for="pword">Password: </label>
+                    <input type="password" name="pword" id="pword" placeholder="password" required>
+                </p>
+                <p>
+                    <label for="phone">Phone No.: </label>
+                    <input type="tel" name="phone" id="phone" placeholder="01110869176" pattern="01[0-9]{9}" required>
+                </p>
+                <p>
+                    <label for="age">Birth Year: </label>
+                    <input type="number" name="age" id="age" value="2002" min="1950" max="2020" step="1">
+                </p>
+                <p>
+                    <label for="gen">Gender: </label>
+                        <p>
+                            <input type="radio" name="gen" id="male" value="male">
+                            <label for="male">Male</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="gen" id="female" value="female">
+                            <label for="female">Female</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="gen" id="none" value="none">
+                            <label for="none">Prefer Not To Respond</label>
+                        </p>
+                </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>What is your favourite game?</legend>
+                    <p>
+                        <label for="fav">Favourite Game: </label>
+                        <select name="fav" id="fav">
+                            <optgroup label="Open World">
+                                <option value="genshin"> Genshin Impact </option>
+                                <option value="elden"> Elden Ring </option>
+                                <option value="wuwa"> Wuthering Wave </option>
+                            </optgroup>
+                            <optgroup label="Turn Based">
+                                <option value="starrail">Honkai Star Rail</option>
+                                <option value="bd3">Baldur's Gate 3</option>
+                                <option value="dd">Dungeons & Dragons</option>
+                            </optgroup>
+                            <optgroup label="Story Based">
+                                <option value="fc">Far Cry</option>
+                                <option value="ac">Assasin Creed</option>
+                                <option value="rdr2">Red Dead Redemption 2</option>
+                            </optgroup>
+                        </select>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend> Leave a message: </legend>
+                    <label for="message">Your message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Type Here"></textarea>
+                </fieldset>
+                <br>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+
+        </article>
+    </body>
+</html>
